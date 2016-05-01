@@ -186,6 +186,14 @@ vnoremap <M-k> :m '<-2<CR>gv=gv
 map <leader>ss :setlocal spell!<cr>
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Spell checking
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" easy system clipboard copy/paste
+noremap <leader>y "*y
+noremap <leader>Y "*Y
+noremap <leader>p "*p
+noremap <leader>P "*P
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
