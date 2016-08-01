@@ -10,3 +10,5 @@ nnoremap <a-l> gt
 
 " clear the search buffer when hitting return
 nnoremap <space><cr> :nohlsearch<cr>
+
+imap jj <Esc>
