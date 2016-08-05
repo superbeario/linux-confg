@@ -1,13 +1,38 @@
-source ~/.vimrc.base
+set hlsearch
+set scrolloff=5
+set ignorecase smartcase
+set showmode
+set history=1000
+
+imap jj <Esc>
+
+set clipboard=unnamed
+
+" easy window navigation
+nnoremap <c-l> <c-w>l
+nnoremap <c-j> <c-w>j
+nnoremap <c-h> <c-w>h
+nnoremap <c-k> <c-w>k
+nnoremap <a-h> gT
+nnoremap <a-l> gt
+
+" code navigation
+nnoremap <space>u :action FindUsages<cr>
+nnoremap <space>i :action GotoImplementation<cr>
+nnoremap <space>s :action GotoSuperMethod<cr>
+
+
+" clear the search buffer when hitting return
+nnoremap <cr> :nohlsearch<cr>
+
+" code refactoring
+nnoremap <space>r :action RenameElement<cr>
+
 
 " built-in navigation to navigated items works better
 nnoremap <c-o> :action Back<cr>
 nnoremap <c-i> :action Forward<cr>
+
 " but preserve ideavim defaults
 nnoremap g<c-o> <c-o>
 nnoremap g<c-i> <c-i>
-
-" built in search looks better
-nnoremap / :action Find<cr>
-" but preserve ideavim search
-nnoremap g/ /
