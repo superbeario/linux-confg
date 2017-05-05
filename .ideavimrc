@@ -36,3 +36,4 @@ nnoremap <c-i> :action Forward<cr>
 " but preserve ideavim defaults
 nnoremap g<c-o> <c-o>
 nnoremap g<c-i> <c-i>
+
